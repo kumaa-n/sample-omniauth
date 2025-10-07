@@ -1,1 +1,3 @@
 # sample-devise
+
+Deviseのサンプルアプリケーションです
