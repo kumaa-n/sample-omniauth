@@ -1,3 +1,3 @@
-# sample-devise
+# sample-omniauth
 
-Deviseのサンプルアプリケーションです
+deviseを用いた、omniauthのテスト
