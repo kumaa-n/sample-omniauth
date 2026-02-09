@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
   def omniauth_callback
     auth = request.env["omniauth.auth"]
     authentication = Authentication.find_by(provider: auth.provider, uid: auth.uid)
-
+ 
     if authentication
       user = authentication.user
     else
