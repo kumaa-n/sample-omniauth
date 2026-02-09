@@ -69,6 +69,7 @@ end
 
 gem "omniauth-discord"
 gem "omniauth-google-oauth2"
+gem "omniauth-github"
 gem "omniauth-rails_csrf_protection"
 
 gem "tailwindcss-rails", "~> 4.4"
