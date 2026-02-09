@@ -3,10 +3,18 @@
     <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">マイページ</h1>
 
     <div class="space-y-4 mb-8">
-      <% if @user.authentications.any? %>
+      <% if @current_authentication %>
+        <div class="border-b pb-4">
+          <p class="text-sm text-gray-600 mb-1">認証プロバイダ</p>
+          <p class="text-lg font-semibold text-gray-800 capitalize"><%= @current_authentication.provider %></p>
+        </div>
         <div class="border-b pb-4">
           <p class="text-sm text-gray-600 mb-1">ID</p>
-          <p class="text-lg font-semibold text-gray-800"><%= @user.authentications.first.uid %></p>
+          <p class="text-lg font-semibold text-gray-800"><%= @current_authentication.uid %></p>
+        </div>
+        <div class="border-b pb-4">
+          <p class="text-sm text-gray-600 mb-1">名前</p>
+          <p class="text-lg font-semibold text-gray-800"><%= @current_authentication.name %></p>
         </div>
       <% end %>
 
