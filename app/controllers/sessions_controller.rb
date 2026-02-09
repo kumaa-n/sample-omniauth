@@ -1,8 +1,4 @@
 class SessionsController < ApplicationController
-  def new
-    redirect_to users_path if logged_in?
-  end
-
   def omniauth_callback
     auth = request.env["omniauth.auth"]
     authentication = Authentication.find_by(provider: auth.provider, uid: auth.uid)

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "sessions#new"
+  root "static_pages#home"
   get "logout", to: "sessions#destroy", as: :logout
   resource :users, only: %i[show]
   get "auth/:provider/callback", to: "sessions#omniauth_callback"
