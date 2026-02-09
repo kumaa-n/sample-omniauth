@@ -469,6 +469,7 @@ DEPENDENCIES
   image_processing (~> 1.2)
   jbuilder
   jsbundling-rails
+  jwt
   kamal
   omniauth-discord
   omniauth-github
